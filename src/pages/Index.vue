@@ -7,7 +7,9 @@
                 Bonjour je m'appelle Maxime JEAN je suis apprenti développeur web.
             </p>
             <p class="home-links">
-                <a href="https://github.com/gitMax18" target="_blank">Voir mon GitHub</a>
+                <a href="https://github.com/gitMax18" target="_blank">
+                    <g-image class="github" alt="github" src="~/assets/github.png" />
+                </a>
             </p>
         </div>
     </Layout>
@@ -19,11 +21,9 @@ export default {
         title: "Ma présentation",
         meta: [
             { charset: "utf-8" },
-            {
-                key: "Présentation, apprenti developpeur",
-                name: "Maxime JEAN",
-                content: "Ma présentation",
-            },
+            { name: "description", content: "Ma présentation" },
+            { name: "viewport", content: "width=device-width, initial-scale=1" },
+            { name: "keywords", content: "apprenti, developpeur, web" },
         ],
     },
 };
@@ -40,5 +40,9 @@ export default {
 .img {
     border-radius: 10000px;
     width: 200px;
+}
+
+.github {
+    width: 50px;
 }
 </style>
