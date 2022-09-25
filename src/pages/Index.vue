@@ -1,31 +1,44 @@
 <template>
     <Layout>
-        <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-        <g-image alt="Example image" src="~/assets/default.jpg" width="135" />
-
-        <h1>Hello World !</h1>
-
-        <p>
-            Bonjour je m'appelle Maxime JEAN je suis apprenti développeur web.
-        </p>
-
-        <p class="home-links">
-            <a href="https://gridsome.org/docs/" target="_blank">Gridsome Docs</a>
-            <a href="https://github.com/gridsome/gridsome" target="_blank">GitHub</a>
-        </p>
+        <div class="container">
+            <g-image class="img" alt="Example image" src="~/assets/default.jpg" />
+            <h1>Hello World !</h1>
+            <p>
+                Bonjour je m'appelle Maxime JEAN je suis apprenti développeur web.
+            </p>
+            <p class="home-links">
+                <a href="https://github.com/gitMax18" target="_blank">Voir mon GitHub</a>
+            </p>
+        </div>
     </Layout>
 </template>
 
 <script>
 export default {
     metaInfo: {
-        title: "Hello, world!",
+        title: "Ma présentation",
+        meta: [
+            { charset: "utf-8" },
+            {
+                key: "Présentation, apprenti developpeur",
+                name: "Maxime JEAN",
+                content: "Ma présentation",
+            },
+        ],
     },
 };
 </script>
 
 <style>
-.home-links a {
-    margin-right: 1rem;
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    border-radius: 10000px;
+    width: 200px;
 }
 </style>
